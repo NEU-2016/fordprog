@@ -48,7 +48,7 @@ public class Interpreter {
 
 			Compiler v = new Compiler();
 			v.visit(tree);
-
+			v.printInfo();
 			return true;
 		} catch (Exception e) {
 			System.out.print("Syntax error: ");
