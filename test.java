@@ -1,7 +1,8 @@
+package buzi;
+
 import zsot;
-import gabor;
+import zsot;
 import akai.zsoti;
-import ivanyi.nagy.gabriel;
 
 public class HelloWorld {
 	public static void main(String[] args) {

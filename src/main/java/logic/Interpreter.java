@@ -46,9 +46,11 @@ public class Interpreter {
 //			System.out.println(inp);
 			ParseTree tree = parser.compilationUnit();
 
-			Compiler v = new Compiler();
-			v.visit(tree);
-			v.printInfo();
+			Compiler compiler = new Compiler();
+			compiler.visit(tree);
+			System.out.println("Package name: " + compiler.getCompilerInfo().getPackageName());
+			System.out.println("Imports: " + compiler.getCompilerInfo().getImportNameList());
+
 			return true;
 		} catch (Exception e) {
 			System.out.print("Syntax error: ");
