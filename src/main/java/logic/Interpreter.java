@@ -45,7 +45,9 @@ public class Interpreter {
 
 //			System.out.println(inp);
 			ParseTree tree = parser.compilationUnit();
-			System.out.println("asszem jo");
+
+			Compiler v = new Compiler();
+			v.visit(tree);
 
 			return true;
 		} catch (Exception e) {
