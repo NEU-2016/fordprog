@@ -1,11 +1,27 @@
-package buzi;
+package valid.pkg.name;
 
-import zsot;
 import zsot;
 import akai.zsoti;
 
-public class HelloWorld {
-	public static void main(String[] args) {
-		System.out.println("Hello, World");
+public class HelloWorld2 extends Object {
+	public HelloWorld2() {
+		Println();
+		Println("teszt");
+		Println("tesztPOJAPJOISD");
 	}
+	public void asd() {
+
+	}
+	public void ad() {
+
+	}
+	public void d() {
+	}
+	public static void main(String[] args) {
+		String asd;
+	}
+
+}
+
+public class HelloWorld extends Object {
 }

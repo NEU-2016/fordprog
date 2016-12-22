@@ -48,11 +48,13 @@ public class Interpreter {
 
 			Compiler compiler = new Compiler();
 			compiler.visit(tree);
+			compiler.getCompileErrorList().forEach(System.out::println);
 			System.out.println("Package name: " + compiler.getCompilerInfo().getPackageName());
 			System.out.println("Imports: " + compiler.getCompilerInfo().getImportNameList());
+			System.out.println("Class names: " + compiler.getCompilerInfo().getClassNameList());
 
 			return true;
-		} catch (Exception e) {
+		} catch (SecurityException e) {
 			System.out.print("Syntax error: ");
 			System.out.println(e.getMessage());
 			return false;
